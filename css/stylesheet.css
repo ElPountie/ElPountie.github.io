@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  color:rgb(255, 255, 255);
   background-color: rgb(30, 30, 30);
 }
 
@@ -70,7 +71,6 @@ ul.navbar-list li a.active {background-color: #0071a5;}
 }
 
 main{
-  color:rgb(255, 255, 255);
   margin: 0 auto;
   width: 75%;
 }
@@ -107,5 +107,31 @@ main{
   width: 75%;
   text-align: justify;
   padding: 1em;
+  margin: 0 auto;
+}
+
+/*FOOTER*/
+footer{
+  background-color: rgb(65,65,65);
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.copyright{
+  padding: 0.5em;
+  text-align: center;
+}
+
+.copyright p{
+  margin: 0.5em;
+}
+
+.information{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 40%;
   margin: 0 auto;
 }
