@@ -12,6 +12,7 @@ body {
   margin: 0;
   color:rgb(255, 255, 255);
   background-color: rgb(30, 30, 30);
+  min-width:600px;
 }
 
 
@@ -60,14 +61,6 @@ ul.navbar-list li a.active {background-color: #0071a5;}
 
 .nav-dropdown:hover .dropdown-menu {
     display: block;
-}
-
-/*when screen is reduce*/
-@media screen and (max-width: 684px) {
-  ul.navbar-list li, 
-  ul.navbar-list li {float: none;}
-  .dropdown-menu a.dropdown-item{min-width: 684px;}
-  main{min-width: 252px;}
 }
 
 main{
@@ -144,10 +137,22 @@ footer a{
   padding: 0.1em;
 }
 
+.information a{
+  font-size : 100%
+}
+
 .contact{
   margin: 0 auto;
 }
 
 .footer_article{
   margin: 0 auto;
+}
+
+/*when screen is reduce*/
+@media screen and (max-width: 684px) {
+  ul.navbar-list li, 
+  ul.navbar-list li {float: none;}
+  .dropdown-menu a.dropdown-item{min-width: 684px;}
+  main{width: 100%;}
 }
