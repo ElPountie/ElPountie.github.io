@@ -132,6 +132,22 @@ footer a{
 .information{
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 40%;
+  margin: 0 auto;
+}
+
+.information ul{
+  padding: 0;
+}
+
+.information li{
+  list-style-type: none;
+  padding: 0.1em;
+}
+
+.contact{
+  margin: 0 auto;
+}
+
+.footer_article{
   margin: 0 auto;
 }
