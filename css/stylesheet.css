@@ -237,3 +237,46 @@ footer a{
     width: 40%;
   }
 }
+
+/*Blog*/
+
+.all_articles_section{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.img_blog{
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.blog_articles h1{
+  text-align: center;
+  border-bottom: solid;
+  border-color: rgb(161, 161, 161);
+  padding: 1em;
+}
+
+
+.img_blog img{
+  display: block;
+  border-radius: 10px;
+  min-width: 50%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.img_blog p{
+  text-align: justify;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.img_blog a{
+  text-decoration: none;
+  color: white;
+}
