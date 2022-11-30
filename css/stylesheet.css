@@ -157,13 +157,10 @@ footer a{
   main{width: 100%;}
 }
 
-/*Article 1*/
+/*Article*/
 
-.all_article{
-  width: 65%;
-  border-left: solid;
-  border-right: solid;
-  border-color: rgb(161, 161, 161);
+.article_main{
+  width: 40%;
 }
 
 .introduction h1{
@@ -180,6 +177,63 @@ footer a{
 .introduction img{
   display: block;
   min-width: 50%;
-  max-width: 75%;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+/*Aside*/
+
+.article_aside{
+  width: 20%;
+  position: fixed;
+}
+
+.article_aside ul{
+  list-style-type: none;
+}
+
+.article_aside a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5em;
+}
+
+.article_aside a:hover{
+  background-color: rgb(65, 65, 65);
+}
+
+.article_aside h3{
+  padding: 0.5em;
+  border-bottom: solid;
+  border-color: rgb(161, 161, 161);
+}
+
+.resume{
+  margin-left: 3em;
+}
+
+@media screen and (max-width: 836px) {
+  .article_aside{
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .article_aside{
+    min-width: 260px;
+  }
+  .article_main{
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .article_aside{
+    display: none;
+  }
+  .article_main{
+    margin: 0 auto;
+    width: 40%;
+  }
 }
