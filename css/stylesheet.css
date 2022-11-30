@@ -156,3 +156,30 @@ footer a{
   .dropdown-menu a.dropdown-item{min-width: 684px;}
   main{width: 100%;}
 }
+
+/*Article 1*/
+
+.all_article{
+  width: 65%;
+  border-left: solid;
+  border-right: solid;
+  border-color: rgb(161, 161, 161);
+}
+
+.introduction h1{
+  text-align: center;
+  padding: 1em;
+  border-bottom: solid;
+  border-color: rgb(161, 161, 161);
+}
+
+.introduction p{
+  text-align: justify;
+}
+
+.introduction img{
+  display: block;
+  min-width: 50%;
+  max-width: 75%;
+  margin: 0 auto;
+}
