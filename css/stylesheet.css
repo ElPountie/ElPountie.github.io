@@ -275,6 +275,15 @@ a:hover{
   overflow-y: scroll;
 }
 
+.resume p::-webkit-scrollbar {
+  display: none;
+}
+
+.resume p {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @media screen and (max-width: 836px) {
   .article_aside{
     min-width: 250px;
