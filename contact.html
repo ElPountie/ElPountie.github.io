@@ -8,40 +8,46 @@
     <title>DevWeb</title>
 </head>
 <body>        
-    <nav class="navbar">
-        <div class="conteneur">
-            <div class="navbar">
-                <ul class="navbar-list">
-                    <li>
-                        <a class="active" href="index.html">DevWeb</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class ="nav-title" href="index.html">Acceuil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class ="nav-title" href="subscribe.html">Abonnez-Vous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class ="nav-title" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-dropdown">
-                        <a class="dropdown-title" href="blog.html">Blog</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="articles/article1.html">Article1</a>
-                            <a class="dropdown-item" href="articles/article2.html">Article2</a>
-                            <a class="dropdown-item" href="articles/article3.html">Article3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class ="nav-title">Abonnez-Vous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class ="nav-title">Statistiques</a>
-                    </li>
-                </ul>
+    <div class="menu">
+        <!-- Utilisation d'une checkbox -->
+        <input type="checkbox" id="hamburger">
+        <!-- Label de la checkbox -->
+        <label id="hamburger-logo" for="hamburger">☰</label> 
+        <nav class="navbar">
+            <div class="conteneur">
+                <div class="navbar">
+                    <ul class="navbar-list">
+                        <li>
+                            <a class="active" href="index.html">DevWeb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-title" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-title" href="subscribe.html">Abonnez-Vous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-title" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a class="dropdown-title" href="blog.html">Blog</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="articles/article1.html">Article1</a>
+                                <a class="dropdown-item" href="articles/article2.html">Article2</a>
+                                <a class="dropdown-item" href="articles/article3.html">Article3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-title">Abonnez-Vous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-title">Statistiques</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <main class="main_contact">
         <h1>Contact</h1>
         <form class="contact">

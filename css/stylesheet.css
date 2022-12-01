@@ -15,8 +15,24 @@ body {
   min-width:600px;
 }
 
+img,h1,h2{
+  transition: transform .1s;
+}
+
+img:hover,h1:hover,h2:hover{
+  transform: scale(1.1);
+}
 
 /*navbar*/
+
+#hamburger {
+  display: none;
+}
+
+#hamburger-logo {
+  display: none;
+}
+
 ul.navbar-list {
   list-style-type: none;
   margin: 0;
@@ -33,6 +49,7 @@ ul.navbar-list li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 ul.navbar-list li a.nav-title:hover:not(.active) {background-color: #111;}
@@ -138,7 +155,12 @@ footer a{
 }
 
 .information a{
-  font-size : 100%
+  font-size : 100%;
+  transition: 0.2s;
+}
+
+a:hover{
+  color: rgb(0, 113, 165);
 }
 
 .contact{
@@ -151,10 +173,47 @@ footer a{
 
 /*when screen is reduce*/
 @media screen and (max-width: 684px) {
-  ul.navbar-list li, 
-  ul.navbar-list li {float: none;}
-  .dropdown-menu a.dropdown-item{min-width: 684px;}
-  main{width: 100%;}
+  .menu{
+    position: fixed;
+    margin: 0;
+  }
+  
+  #hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+  }
+  
+  #hamburger-logo,nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #hamburger:checked ~ #hamburger-logo,#hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+  }
+  
+  #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: rgb(105, 105, 105);
+    width: 20%;
+    display: block;
+    color: rgb(255, 255, 255);
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    /* Pour que le menu hamburger soit "rangé" par défaut */
+    transform: translateX(-20%);
+    padding: 10px;
+  }
+  
+  nav {
+    width: 22%;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(-200px);
+  }
+  
 }
 
 /*Article*/
