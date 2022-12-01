@@ -251,7 +251,7 @@ a:hover{
   list-style-type: none;
 }
 
-.article_aside a{
+.article_aside a{     
   text-decoration: none;
   color: white;
   display: block;
@@ -315,7 +315,7 @@ a:hover{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em  ;
 }
 
 .img_blog{
@@ -369,6 +369,14 @@ a:hover{
   border-radius: 10px;
 }
 
+.form_contact p{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 110%;
+  background-color: #e34343;
+}
+
 .input_contact{
   padding: 0.5em;
 }
@@ -387,10 +395,7 @@ a:hover{
 }
 
 .input_contact input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
   padding: 12px 20px;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;

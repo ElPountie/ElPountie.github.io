@@ -51,39 +51,47 @@
             <div class="form_contact">
 
                 <div class="input_contact">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required="required">
+                    <label for="nom" id="nom_label">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                    <p id="name-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required="required">
+                    <label for="prenom" id="prenom_label">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                    <p id="mdp-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+                    <label for="email" id="email_label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <p id="obligatoire"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" required="required">
+                    <label for="password" id="password_label">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+                    <p id="surname-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="date_of_birth">Date de naissance</label>
-                    <input type="date" id="date_of_birth" name="date_of_birth" required="required">
+                    <label for="date_of_birth" id="date_of_birth_label">Date de naissance</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth">
+                    <p id="date-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="adresse">Adresse</label>
-                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse" required="required">
+                    <label for="adresse" id="adresse_label">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                    <p id="post-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="code_postal">Code postal</label>
-                    <input type="text" id="code_postal" name="code_postal" placeholder="Votre code postal" pattern="[0-9]" required="required">
+                    <label for="code_postal" id="code_postal_label">Code postal</label>
+                    <input type="text" id="code_postal" name="code_postal" placeholder="Votre code postal" pattern="[0-9]">
+                    <p id="code-error"></p>
                 </div>
                 <div class="input_contact">
-                    <label for="ville">Ville</label>
-                    <input type="text" id="ville" name="ville" placeholder="Votre ville" required="required">
+                    <label for="ville" id="ville_label">Ville</label>
+                    <input type="text" id="ville" name="ville" placeholder="Votre ville">
+                    <p id="city-error"> </p>
                 </div>
                 <div class="input_contact">
-                    <label for="genre">Genre</label>
+                    <label for="genre" id="genre_label">Genre</label>
                     <select name="genre" id="genre">
                         <option value="homme">Homme</option>
                         <option value="femme">Femme</option>
@@ -91,8 +99,8 @@
                     </select>
                 </div>
                 <div class="input_contact">
-                    <label for="file">Photo de profil</label>
-                    <input type="file" id="file" name="file" required="required">
+                    <label for="file" id="file_label">Photo de profil</label>
+                    <input type="file" id="file" name="file">
                 </div>
                 <div class="input_contact_checkbox">
                     <label>Loisirs</label>
@@ -104,11 +112,11 @@
                     </div>
                 </div>
                 <div class="input_contact">
-                    <label for="couleur">Couleur préférée</label>
+                    <label for="couleur" id="couleur_label">Couleur préférée</label>
                     <input type="color" id="couleur" name="couleur">
                 </div>
                 <div class="input_contact">
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" id="btn" value="Envoyer" onclick="subsubmit()">
                 </div>
             </div>
         </form>
@@ -149,5 +157,6 @@
             </div>
         </div>
     </footer>
+    <script src="/js/config_sub.js"></script>
 </body>
 </html>
