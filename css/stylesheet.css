@@ -324,3 +324,19 @@ footer a{
   cursor: pointer;
   float: right;
 }
+
+.input_contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em;
+}
+
+#file{
+  width: 75%;
+}
